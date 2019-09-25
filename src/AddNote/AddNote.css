@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.noteForm input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 3px 0 10px 0;
+  font-size: 0.9em;
+  background-color: #cacaca;
+}
+.noteForm select {
+  display: block;
+  width: 60%;
+  margin: 0 auto 5px;
+  height: 2em;
+  background-color: #cacaca;
+}
+.noteForm textarea {
+  height: 150px;
+}
+
+.noteForm label {
+  font-size: 0.9em;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+legend {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: rgb(56, 143, 64);
+}
+
+.btn {
+  padding: 12px;
+  margin: 7px;
+  width: 22vw;
+  text-transform: uppercase;
+}
+
+.noteForm {
+  width: 50vw;
+}
+
+.noteFieldset {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+legend,
+label {
+  color: #cacaca;
+}
+
+input {
+  background-color: #cacaca;
+  border: 0;
+  color: black;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 200px;
+  padding: 8px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #cacaca;
+  border: 0;
+  color: black;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  width: 150px;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #ffb72f;
+}
