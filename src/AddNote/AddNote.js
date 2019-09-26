@@ -137,6 +137,8 @@ export default class AddNote extends React.Component {
                 //type="text"
                 name="name"
                 placeholder="Note Title"
+                aria-label="Note Title"
+                aria-required="true"
                 onChange={e => this.updateTitle(e)}
               />
               {this.state.content.touched && (
@@ -153,6 +155,8 @@ export default class AddNote extends React.Component {
             <textarea
               id="note_input_content"
               name="content"
+              aria-label="insert note content"
+              aria-required="true"
               ref={this.contentInput}
               onChange={e => this.updateContent(e)}
             ></textarea>
@@ -163,6 +167,8 @@ export default class AddNote extends React.Component {
             <select
               value={this.state.selectedFolder.name}
               id="note_selected_folder"
+              aria-label="Select folder"
+              aria-required="true"
               onChange={e => this.handleFolderChange(e)}
             >
               <option value="--- Select a Folder ---" name="folderId">

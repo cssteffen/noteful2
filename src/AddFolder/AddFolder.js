@@ -105,6 +105,8 @@ export default class AddFolder extends React.Component {
               className="newFolder"
               type="text"
               name="name"
+              aria-label="New Folder Title"
+              aria-required="true"
               onChange={e => this.handleChange(e)}
             />
             {this.state.name.touch && (
