@@ -91,7 +91,7 @@ export default class AddNote extends React.Component {
       name: name.value,
       modified: new Date(),
       content: this.contentInput.current.value,
-      folderId: this.state.selectedFolder.value
+      folder_id: this.state.selectedFolder.value
     };
     this.setState({ error: null });
 
