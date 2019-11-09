@@ -2,6 +2,7 @@ import React from "react";
 import ValidationError from "../Error Boundaries/ValidationError";
 import ApiContext from "../ApiContext";
 import config from "../config";
+import PropTypes from "prop-types";
 
 import "./AddNote.css";
 
@@ -194,3 +195,7 @@ export default class AddNote extends React.Component {
     );
   }
 }
+
+AddNote.propTypes = {
+  id: PropTypes.string
+};
