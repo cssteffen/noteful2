@@ -171,11 +171,11 @@ export default class AddNote extends React.Component {
               aria-required="true"
               onChange={e => this.handleFolderChange(e)}
             >
-              <option value="--- Select a Folder ---" name="folderId">
+              <option value="--- Select a Folder ---" name="folder_id">
                 --- Select a Folder ---
               </option>
               {folders.map(folder => (
-                <option key={folder.id} value={folder.id} name="folderId">
+                <option key={folder.id} value={folder.id} name="folder_id">
                   {folder.name}
                 </option>
               ))}

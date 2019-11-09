@@ -79,7 +79,7 @@ class App extends Component {
     //const { notes, folders } = this.state;
     return (
       <>
-        {["/", "/folder/:folderId"].map(path => (
+        {["/", "/folder/:folder_id"].map(path => (
           <Route exact key={path} path={path} component={NoteListNav} />
         ))}
         <Route path="/note/:noteId" component={NotePageNav} />
@@ -93,7 +93,7 @@ class App extends Component {
     //const { notes, folders } = this.state;
     return (
       <>
-        {["/", "/folder/:folderId"].map(path => (
+        {["/", "/folder/:folder_id"].map(path => (
           <Route exact key={path} path={path} component={NoteListMain} />
         ))}
         <Route path="/note/:noteId" component={NotePageMain} />

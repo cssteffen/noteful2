@@ -46,7 +46,7 @@ export default class AddFolder extends React.Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    //const folderId = this.props.id;
+    //const folder_id = this.props.id;
     const { name } = e.target;
     const newFolder = {
       name: name.value
