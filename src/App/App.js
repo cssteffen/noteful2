@@ -109,6 +109,7 @@ class App extends Component {
       deleteNote: this.handleDeleteNote,
       addFolder: this.addFolder,
       addNote: this.addNote
+      //updateNote: this.updateNote
     };
     return (
       <ApiContext.Provider value={value}>
@@ -128,3 +129,5 @@ class App extends Component {
 }
 
 export default App;
+
+//        <Route path="/edit/:noteId" component={EditNote} />

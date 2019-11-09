@@ -37,3 +37,5 @@ export default class NotePageMain extends React.Component {
     );
   }
 }
+
+//        <Link to={`/edit/${noteId}`}>Edit Note</Link>
