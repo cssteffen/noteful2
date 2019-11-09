@@ -43,6 +43,7 @@ class App extends Component {
       .catch(error => {
         console.error({ error });
       });
+    console.log("componentDidMount() ran");
   }
 
   handleDeleteNote = noteId => {
