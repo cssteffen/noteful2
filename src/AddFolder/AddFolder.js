@@ -34,7 +34,6 @@ export default class AddFolder extends React.Component {
         touch: true
       }
     });
-    console.log(this.state.name.value);
   }
 
   validateName() {

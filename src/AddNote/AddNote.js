@@ -35,7 +35,6 @@ export default class AddNote extends React.Component {
         touched: true
       }
     });
-    console.log("updateTitle ran", this.state.name.value);
   }
 
   validateTitle() {
@@ -43,7 +42,6 @@ export default class AddNote extends React.Component {
     if (name === "") {
       return "Title is required";
     }
-    console.log("ValidateTitle ran", name, this.state.name.touched);
   }
 
   updateContent(e) {
@@ -53,7 +51,6 @@ export default class AddNote extends React.Component {
         touched: true
       }
     });
-    console.log("updateContent ran", this.state.content.value);
   }
 
   validateContent() {
@@ -61,7 +58,6 @@ export default class AddNote extends React.Component {
     if (!content) {
       return "Note is empty - enter content";
     }
-    console.log("ValidateContent ran", content);
   }
 
   handleFolderChange(e) {
@@ -72,7 +68,6 @@ export default class AddNote extends React.Component {
         //touched: true
       }
     });
-    console.log("handleFolderchange ran", this.state.selectedFolder.name);
   }
 
   validateFolder() {
@@ -80,7 +75,6 @@ export default class AddNote extends React.Component {
     if (folder === "--- Select a Folder ---") {
       return "Select a Folder";
     }
-    console.log("ValidateFolder ran", folder);
   }
 
   //: e.target.value
