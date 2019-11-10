@@ -196,7 +196,7 @@ export default class AddNote extends React.Component {
   }
 }
 
-Note.propTypes = {
+AddNote.propTypes = {
   name: PropTypes.string,
   folder_id: PropTypes.number,
   content: PropTypes.string,
