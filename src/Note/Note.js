@@ -18,10 +18,10 @@ export default class Note extends React.Component {
     const noteId = this.props.id;
 
     fetch(config.API_ENDPOINT + `/notes/${noteId}`, {
-      method: "DELETE",
-      headers: {
-        "content-type": "application/json"
-      }
+      method: "DELETE"
+      //headers: {
+      //"content-type": "application/json"
+      //}
     }) /*
       .then(res => {
         if (!res.ok) return res.json().then(e => Promise.reject(e));
@@ -33,7 +33,8 @@ export default class Note extends React.Component {
             throw e;
           });
         }
-        return res.json();
+        //return res.json();
+        return;
       })
 
       .then(() => {
