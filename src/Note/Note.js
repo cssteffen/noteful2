@@ -34,7 +34,6 @@ export default class Note extends React.Component {
           });
         }
         //return res.json();
-        return res.json();
       })
 
       .then(() => {
