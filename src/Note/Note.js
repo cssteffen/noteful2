@@ -34,7 +34,7 @@ export default class Note extends React.Component {
           });
         }
         //return res.json();
-        return;
+        return res.json();
       })
 
       .then(() => {
@@ -74,6 +74,6 @@ export default class Note extends React.Component {
 
 Note.propTypes = {
   name: PropTypes.string,
-  id: PropTypes.string,
+  //id: PropTypes.string,
   modified: PropTypes.string
 };

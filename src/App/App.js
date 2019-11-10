@@ -75,6 +75,14 @@ class App extends Component {
     });
   };
 
+  updateNote = updateNote => {
+    this.setState({
+      notes: this.state.notes.map(note =>
+        note.id !== updateNote.id ? note : updateNote
+      )
+    });
+  };
+
   renderNavRoutes() {
     //const { notes, folders } = this.state;
     return (
